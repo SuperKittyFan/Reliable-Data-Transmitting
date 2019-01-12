@@ -6,3 +6,9 @@ This is UIUC CS438 communication network course project. The objective is to imp
 * An instance of this protocol competing with TCP get on average at least half as much throughput as the TCP flow. 
 * All of the above should hold in the presence of any amount of dropped packets. All flows, including the TCP flows, will see the same rate of drops. The network will not introduce bit errors.
 * The protocol utilize at 80% of band-width when there is no competing traffic, and packets are not artificially dropped or re-ordered.
+
+## How to Deploy
+
+* `cd` to the project directory
+* In command line, `make` to compile on both sender and receiver
+* Execute `reliable_sender` on sender, `reliable_receiver` on receiver
